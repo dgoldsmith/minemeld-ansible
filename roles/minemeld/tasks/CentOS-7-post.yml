@@ -47,14 +47,14 @@
     group: root
     mode: 0644
   notify: restart collectd
-- name: open https port
-  command: firewall-cmd --zone=public --add-service=https
-- name: open http port
-  command: firewall-cmd --zone=public --add-service=http
-- name: open https port (permanent)
-  command: firewall-cmd --zone=public --permanent --add-service=https
-- name: open http port (permanent)
-  command: firewall-cmd --zone=public --permanent --add-service=http
+#- name: open https port
+#  command: firewall-cmd --zone=public --add-service=https
+#- name: open http port
+#  command: firewall-cmd --zone=public --add-service=http
+#- name: open https port (permanent)
+#  command: firewall-cmd --zone=public --permanent --add-service=https
+#- name: open http port (permanent)
+#  command: firewall-cmd --zone=public --permanent --add-service=http
 
 # system service
 - name: minemeld systemd
